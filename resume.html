@@ -8,28 +8,58 @@
   body {
     font-family: Arial, sans-serif;
     color: #333;
+    text-align: center; /* Styled alignment */
+    background-color: #f0f0f0; /* Styled background color */
   }
+  
   table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 20px;
+    background-color: white; /* Styled background color */
+    font-size: 16px; /* Styled font size */
   }
-  
+
+  th, td {
+    padding: 10px; /* Styled padding */
+    word-break: break-all; /* Styled word-break */
+  }
+
+  .section-heading {
+    color: #007bff; /* Styled color */
+    font-size: 24px; /* Styled font size */
+    margin-bottom: 10px; /* Styled margin */
+  }
+
+  .contact-info {
+    font-family: "Courier New", Courier, monospace; /* Styled font */
+  }
+
+  /* Added id selector */
+  #main-heading {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ff0000; /* Red color */
+  }
 </style>
 </head>
 <body>
 
-<h1 class="section-heading">Jacob Baird</h1>
+<h1 id="main-heading" class="section-heading">Jacob Baird</h1>
 
 <table border="1">
   <tr>
     <th>Contact Information</th>
   </tr>
   <tr>
-    <td>Email: JABaird11@gmail.com <br>Phone: (737)-414-4110)<br>Address: 122 Carrington Drive, Buda TX</td>
+    <td class="contact-info">Email: JABaird11@gmail.com <br>Phone: (737)-414-4110)<br>Address: 122 Carrington Drive, Buda TX</td>
   </tr>
 </table>
+
+<a href="resume.html"> My Resume</a>
+<br>
+<a href="Dogs.html"> Other Page</a>
 
 <h2 class="section-heading">Work/Volunteer Experience</h2>
 <ul>
