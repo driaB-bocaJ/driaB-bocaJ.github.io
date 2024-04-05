@@ -34,7 +34,6 @@
   .links a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -44,8 +43,23 @@
     cursor: pointer;
   }
 
+  /* Black button with white text */
+  .links a:nth-child(1) {
+    background-color: #000;
+  }
+
+  /* Green button with white text */
+  .links a:nth-child(2) {
+    background-color: #008000;
+  }
+
+  /* Maroon button with white text */
+  .links a:nth-child(3) {
+    background-color: #800000;
+  }
+
   .links a:hover {
-    background-color: #0056b3;
+    opacity: 0.8;
   }
 </style>
 </head>
