@@ -43,10 +43,29 @@
     color: #ff0000; 
   }
   
- 
+  /* Remove bullet points from lists */
   ul, ol {
     list-style-type: none;
     padding-left: 0;
+  }
+  
+  /* Back button styles */
+  .back-button {
+    margin-top: 20px;
+  }
+
+  .back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .back-button a:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
@@ -139,6 +158,11 @@
   <li>Jacklynn Turner-Creel - Jacklynn.Turner@austinisd.org</li>
   <li>Christina Baird - Christina.Baird@austinisd.org</li>
 </ol>
+
+<!-- Back button -->
+<div class="back-button">
+  <a href="index.html">Back</a>
+</div>
 
 </body>
 </html>
