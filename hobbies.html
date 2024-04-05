@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacob Baird's Hobbies</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .gallery img {
+    max-width: 400px;
+    max-height: 300px;
+    margin: 0 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .hobbies-section {
+    margin-bottom: 20px;
+  }
+
+  .hobbies-section h2 {
+    color: #007bff;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Jacob Baird's Hobbies</h1>
+
+
+
+    <div class="hobbies-section">
+      <h2>Choir</h2>
+      <p>Description about your involvement in choir...</p>
+    </div>
+
+    <div class="hobbies-section">
+      <h2>Band</h2>
+      <p>Description about your involvement in band...</p>
+    </div>
+
+    <div class="hobbies-section">
+      <h2>Theater</h2>
+      <p>Description about your involvement in theater...</p>
+    </div>
+
+    <div class="hobbies-section">
+      <h2>Baseball</h2>
+      <p>Description about your involvement in baseball...</p>
+    </div>
+  </div>
+
+  <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacob Baird's Hobbies</title>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Jacob Baird's Photos</h1>
+
+    <div class="gallery">
+      <button class="btn" id="prevBtn">Previous</button>
+      <img src="" alt="Gallery Image" id="galleryImg">
+      <button class="btn" id="nextBtn">Next</button>
+    </div>
+
+    
+  </div>
+
+  <script>
+    const images = ['choirscreenshot.jpg', 'baseball.jpg']; 
+    let currentIndex = 0;
+    const galleryImg = document.getElementById('galleryImg');
+
+    function showImage(index) {
+      galleryImg.src = 'gallery/' + images[index];
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', function() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', function() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    showImage(currentIndex); 
+  </script>
+</body>
+</html>
