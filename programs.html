@@ -7,7 +7,7 @@
   <style>
     body {
       background-color: #000;
-      color: #d4af37; /* gold */
+      color: #d4af37; 
       font-family: Arial, sans-serif;
     }
     .program {
@@ -15,54 +15,109 @@
       padding: 20px;
       border-radius: 10px;
       background-color: #333;
+      text-align: center;
     }
     .program h2 {
-      color: #d4af37; /* gold */
+      color: #d4af37;
     }
     .program p {
-      color: #fff; /* white */
+      color: #fff; 
     }
     .program a {
-      color: #d4af37; /* gold */
+      color: #d4af37; 
       text-decoration: none;
     }
     .program a:hover {
       text-decoration: underline;
     }
+
+    
+  .dropbtn {
+  background-color: #d4af37;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #000;
+}
+
   </style>
 </head>
 <body>
 
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="programs.html">My Programs</a>
+      <a href="hobbies.html">My Hobbies</a>
+      <a href="#">Image Filter Page</a>
+    </div>
+  </div>
+
 <div style="text-align: center; margin-bottom: 20px;">
-  <h1 style="color: #ffd700;">My Programs</h1>
+  <h1 style="color: #d4af37;">My Programs</h1>
 </div>
 
 <div class="program">
   <h2>Falling Objects</h2>
-  <video controls width="400">
-    <source src="Falling Objects.mp4" type="Falling Objects">
-    Your browser does not support the video tag.
-  </video>
-  <p>This program does XYZ.</p>
-  <p>View the code on <a href="https://github.com/yourusername/program1" target="_blank">GitHub</a>.</p>
+  <div style="margin: 0 auto; width: 400px;"> 
+    <video controls width="400">
+      <source src="Falling Objects.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p>This program was a very fun chalenge to code! I enjoyed making sure that there were enough objects to play the game for an enjoyable amount of time, but not to long, and vise versa. This was one of my favorite little projects to make so far!</p>
+  <p>View the code on <a href="https://github.com/driaB-bocaJ/Falling-Objects.git" target="_blank">GitHub</a>.</p>
 </div>
 
 <div class="program">
-  <h2>Program 2</h2>
-  <video controls width="400">
-    <source src="program2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>This program does ABC.</p>
-  <p>View the code on <a href="https://github.com/yourusername/program2" target="_blank">GitHub</a>.</p>
+  <h2>Turtle Name</h2>
+  <div style="margin: 0 auto; width: 400px;"> 
+    <video controls width="400">
+      <source src="Turtle Name Chooser.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p>This program is a silly thing I came up with when I had a bit of spare time. All you have to do is enter your name, and then the turtle will print it out in colors! If you take a closer look at the code, you can change the colors that are used when priniting out the name, and even maybe add a color chooser for the input name section!</p>
+  <p>View the code on <a href="https://github.com/driaB-bocaJ/nameReplit.git" target="_blank">GitHub</a>.</p>
 </div>
 
 <div class="program">
   <h2>Program 3</h2>
-  <video controls width="400">
-    <source src="program3.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div style="margin: 0 auto; width: 400px;"> 
+    <video controls width="400">
+      <source src="program3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <p>This program does DEF.</p>
   <p>View the code on <a href="https://github.com/yourusername/program3" target="_blank">GitHub</a>.</p>
 </div>
