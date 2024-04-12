@@ -31,7 +31,12 @@
       text-decoration: underline;
     }
 
-    
+    .gitbut {
+    background-color:#d4af37;
+    color: white
+
+    }
+
   .dropbtn {
   background-color: #d4af37;
   color: white;
@@ -97,7 +102,32 @@
   </div>
   <p>This program was a very fun challenge to code! I enjoyed making sure that there were enough objects to play the game for an enjoyable amount of time, but also not for too long, and vise versa. This was one of my favorite little projects to make so far!</p>
   <p>View the code on <a href="https://github.com/driaB-bocaJ/Falling-Objects.git" target="_blank">GitHub</a>.</p>
+  <button onclick="downloadFile()">Download This Program!</button>
+
+    <script>
+        function downloadFile() {
+            const url = 'executable.exe'; 
+            const fileName = 'executable.exe';
+
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = fileName;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => console.error('Download failed:', error));
+        }
+    </script>
 </div>
+
+
+
 
 <div class="program">
   <h2>Turtle Name</h2>
@@ -112,15 +142,15 @@
 </div>
 
 <div class="program">
-  <h2>Program 3</h2>
+  <h2>Shape Chooser</h2>
   <div style="margin: 0 auto; width: 400px;"> 
     <video controls width="400">
-      <source src="program3.mp4" type="video/mp4">
+      <source src="ShapeChooser.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-  <p>This program does DEF.</p>
-  <p>View the code on <a href="https://github.com/yourusername/program3" target="_blank">GitHub</a>.</p>
+  <p>This program is a small little drawing game, where you are asked to input a shape from a perdetermined list of shapes, and then the turtle draws it for you!</p>
+  <p>View the code on <a href="https://github.com/driaB-bocaJ/Shapes.git" target="_blank">GitHub</a>.</p>
 </div>
 
 </body>
